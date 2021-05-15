@@ -14,7 +14,6 @@ plus_string = plus + x + plus
 string_tag = vertic_line + y*start_multi + '####' + y*tag_multi + vertic_line
 space_line = vertic_line + y*x_multiplayer
 size_name = int(len(name))
-    while size
 print(plus_string)
 print(string_tag)
 print(string_tag)

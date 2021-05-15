@@ -4,13 +4,14 @@ print('Напишите свой адрес')
 adress = input()
 size_name = int(len(name))
 size_adress = int(len(adress)
-y = ' '
+m = ' '
 x = '|'
-    for z in range(size_name):
+    for z in a:
         a = size_adress
-        if a > z
+        if a > k
             print(a)
     else
-        print(z)
-print(x + name + y + z + x)
-print(x + adress + y + z + x)
+        k = size_adress
+            print(k)
+print(x + name + m*z + x)
+print(x + adress + m*z + x)
