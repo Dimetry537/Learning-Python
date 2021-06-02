@@ -14,4 +14,3 @@ def bmi_formula(w, h, m, bmi_si, bmi_i):
 		return bmi_si
 	if m == 2:
 		return bmi_i
-bmi_formula(w, h, m, bmi_si, bmi_i)
