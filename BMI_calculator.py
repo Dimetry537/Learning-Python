@@ -4,14 +4,12 @@ print('select your weight')
 weight = float(input())
 print('select your height')
 height = float(input())
-def bmi_formula(w, h, m):
-	m = metric_system
-	w = weight
-	h = height
-	bmi_si = w / (h ** 2)
-	bmi_i = (w*703) / (h ** 2)
-	if m == 1:
+def bmi_formula(bmi):
+	bmi = metric_system
+	bmi_si = weight / (height ** 2)
+	bmi_i = (weight*703) / (height ** 2)
+	if bmi == 1:
 		return bmi_si
-	if m == 2:
+	if bmi == 2:
 		return bmi_i
-bmi_formula()
+bmi_formula(bmi)
