@@ -17,17 +17,17 @@ print('Your BMI is: ')
 print(bmi_a)
 if bmi_a < 15.0:
 	print('very severely underweight')
-elif bmi_a >= 15.0 or bmi_a <= 16.0:
+elif bmi_a >= 15.0 and bmi_a <= 16.0:
 	print('severely underweight')
-elif bmi_a >= 16.1 or bmi_a <= 18.4:
+elif bmi_a >= 16.1 and bmi_a <= 18.4:
 	print('underweight')
-elif bmi_a >= 18.5 or bmi_a <= 24.9:
+elif bmi_a >= 18.5 and bmi_a <= 24.9:
 	print('normal weight')
-elif bmi_a >= 25.0 or bmi_a <= 29.9:
+elif bmi_a >= 25.0 and bmi_a <= 29.9:
 	print('overweight')
-elif bmi_a >= 30.0 or bmi_a <= 34.9:
+elif bmi_a >= 30.0 and bmi_a <= 34.9:
 	print('moderately obese')
-elif bmi_a >= 35.0 or bmi_a <= 39.9:
+elif bmi_a >= 35.0 and bmi_a <= 39.9:
 	print('severely obese')
 elif bmi_a >= 40.0:
 	print('very severely (or "morbidly") obese')
