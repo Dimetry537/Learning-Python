@@ -1,5 +1,5 @@
 from vertex import Vertex
-labirinth = {Vertex(0,0):[1,5],
+labirinth = {Vertex(0, 0):[1,5],
 Vertex(0,1):[0,2],
 Vertex(0,2):[1,3],
 Vertex(0,3):[4,2],
@@ -37,31 +37,13 @@ Vertex(2,5):[33,35],
 Vertex(3,5):[34,36],
 Vertex(3,6):[27,35],
 Vertex(2,3):[4,11,33]}
-rules = '''Hello, Adventurer, welcome to Minotaurs labirinth. 
-	You must find exit from this labirinth and dont get caught by the minotaur. 
-	You must write in the console: left, right, up, down to go through the labirinth. 
-	Also You can write exit if you want go out from the programm, but must remember, that if back here You will start over. 
-	if you agree with the rules, write yes, if write no you will exit'''
+rules = 'Hello, Adventure, welcome to Minotaurs labirinth. You must find exit from this labirinth and dont get caught by the minotaur. You must write in the console: left, right, up, down to go through the labirinth. Also You can write exit if you want go out from the programm, but must remember, that if back here You will start over. if you agree with the rules, write yes, if write no you will exit'
+#описание действий человека, пошагово. записать атомарными действиями. перевести шаги в алгоритм. Действия, условия и состояния. я нахожусь в комнате - состояние. могу ли я идти вправо - вопрос, условие. я иду вправо - действие. начальное состояние это нулевая вершина (position=labirinth.keys()[0]).
 print(rules)
 yes = input()
 if yes == 'yes':
 	pass
 if yes == 'no':
 	exit()
-'''
-# я нахожусь в комнате со стенами и проходами. 
-Я могу спрашивать в какую сторону идти, варианты: вперед, назад, влево, вправо.
-я могу пройти в ту сторону, куда есть проход
-'''
-position = labirinth.keys()[0]
-finish_position = labirinth.keys()[32]
-'''
-Я спрашиваю: могу ли я пойти вперед? Мне ответили, что впереди стена. Я спрашиваю: могу ли я пойти направо? Мне ответили, да можешь. Иду направо.
-я компьютер и я знаю нахождение точек координат каждой комнаты, я знаю где право, лево, вперед и назад.
-'''
-while True:
-	current_postion == possible_position
-	break
 route = 'where will You go'
 print(route)
-input()
