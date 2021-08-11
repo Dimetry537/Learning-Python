@@ -39,6 +39,8 @@ Vertex(3,6):[27,35],
 Vertex(2,3):[4,11,33]}
 rules = 'Hello, Adventure, welcome to Minotaurs labirinth. You must find exit from this labirinth and dont get caught by the minotaur. You must write in the console: left, right, up, down to go through the labirinth. Also You can write exit if you want go out from the programm, but must remember, that if back here You will start over. if you agree with the rules, write yes, if write no you will exit'
 #описание действий человека, пошагово. записать атомарными действиями. перевести шаги в алгоритм. Действия, условия и состояния. я нахожусь в комнате - состояние. могу ли я идти вправо - вопрос, условие. я иду вправо - действие. начальное состояние это нулевая вершина (position=labirinth.keys()[0]).
+position=labirinth.keys()[0]
+
 print(rules)
 yes = input()
 if yes == 'yes':
