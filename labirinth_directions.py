@@ -82,8 +82,8 @@ from vertex import Vertex
 ##   (1,0) -- (1,1)
 ##     |
 ##   (0,0) -- (0,1)
-##
-
+##Обход в ширину
+# рисование лабиринта
 # vartex: [up, left, right, down], -1 no actiono
 labirinth = {
     Vertex(0,0): [2, -1, 1, -1],
@@ -98,7 +98,7 @@ labirinth = {
 #     ['left'],
 # ]
 
-mapping = ['up', 'left', 'right', 'down'];
+mapping = ['up', 'left', 'right', 'down']
 
 start_index = 0
 start_vertex = list(labirinth)[start_index]
