@@ -37,7 +37,7 @@ Vertex(2,5):[33,35],
 Vertex(3,5):[34,36],
 Vertex(3,6):[27,35],
 Vertex(2,3):[4,11,33]}
-labirinth0 = {labirinth.keys()[0]:['up', 'right']}
+labirinth.keys()[0] = ('up', 'right')
 '''labirinth1 = labirinth.keys('left', 'right')[1]'
 labirinth.keys()[2] = ('left', 'right')
 labirinth.keys()[3] = ('right', 'up')
