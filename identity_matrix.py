@@ -1,10 +1,23 @@
-<<<<<<< HEAD
 # написать единичную матрицу с использованием циклов for
-=======
-x = [0 for i in range(16)]
-n = 4
-y = [x[i:i+n] for i in range(0,16,n)]
-z = [[1 if m == n else 0 for m, _ in enumerate(y[n])] for n, _ in enumerate(y)]
+#matrix = input('Ensert data of identity matrix')
 
-for i in z: print(i)
->>>>>>> b24fdb0 (make an identity matrix)
+''' [1 0 0 0]
+    [0 1 0 0]
+    [0 0 1 0] 
+    [0 0 0 1]'''
+'''test_identity_matrix = str([1, 0, 0, 0]), str([0, 1, 0, 0]), str([0, 0, 1, 0]), str([0, 0, 0, 1])
+
+for x in test_identity_matrix:
+    for i in x:
+    x = row(test_identity_matrix)
+
+print(x)
+'''
+def identity_matrix(n):
+    m=[[0 for x in range(n)] for y in range(n)]
+    for i in range(0, n):
+        m[i][i] = 1
+    return m
+
+m = identity_matrix(6)
+print(m)

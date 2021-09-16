@@ -44,15 +44,9 @@ Also You can write exit if you want go out from the programm,
 but must remember, that if back here You will start over. 
 if you agree with the rules, write yes, if write no you will exit'''
 #описание действий человека, пошагово. записать атомарными действиями. перевести шаги в алгоритм. Действия, условия и состояния. я нахожусь в комнате - состояние. могу ли я идти вправо - вопрос, условие. я иду вправо - действие. начальное состояние это нулевая вершина (position=labirinth.keys()[0]).
-<<<<<<< HEAD
-#состояние я нахожусь в комнате. Вопрос могу ли я пойти направо. могу ли я пойти налево? могу ли я пойти прямо? могу ли я пойти назад? Действие я прохожу в следующую комнату. Состояние я нахожусь в Х комнате.
-#ты находишься в комнате. условия: Справа находится стена, слева находится стена, впереди стена, сзади находится стена. Условие: ты можешь идти.
-labirinth_directions = labirinth.keys()[0]:['up', 'right'],
-=======
 #состояние: я нахожусь в комнате. Вопрос могу ли я пойти направо. могу ли я пойти налево? могу ли я пойти прямо? могу ли я пойти назад? Действие я прохожу в следующую комнату. Состояние я нахожусь в Х комнате.
 #ты находишься в комнате, ты находишься на позиции. условия: Справа находится стена, слева находится стена, впереди стена, сзади находится стена. Условие: ты можешь идти.
 labirinth_directions = {labirinth.keys()[0]:['up', 'right'],
->>>>>>> b24fdb0 (make an identity matrix)
 labirinth.keys()[1]:['left', 'right'],
 labirinth.keys()[2]:['left', 'right'],
 labirinth.keys()[3]:['right', 'up'],
@@ -89,8 +83,7 @@ labirinth.keys()[33]:['right', 'left'],
 labirinth.keys()[34]:['up', 'left'],
 labirinth.keys()[35]:['down', 'right'],
 labirinth.keys()[36]:['right', 'left'],
-<<<<<<< HEAD
-labirinth.keys()[37]:['up', 'down', 'right']
+labirinth.keys()[37]:['up', 'down', 'right']}
 ###Вход Граф лабиринт неориентированный с одинаковыми длинами ребер
 #Вывод Вершины и соединения проход по вершинам
 #Моя позиция 0
@@ -104,14 +97,6 @@ labirinth.keys()[37]:['up', 'down', 'right']
 #def labirinth(vertex):
 #	position=labirinth.keys()[0]
 #	real_position =
-=======
-labirinth.keys()[37]:['up', 'down', 'right']}
-zero_position=labirinth.keys()[0]
-fin_position=labirinth.keys()[32]
-#блок схема и псевдокод
-#псевдокод написание на листке бумаги
-#
->>>>>>> b24fdb0 (make an identity matrix)
 print(rules)
 yes = input()
 if yes == 'yes':
