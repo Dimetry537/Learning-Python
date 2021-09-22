@@ -1,4 +1,4 @@
-from .Item import Item
+from .item import Item
 from typing import Union
 
 class Inventory:

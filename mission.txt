@@ -1,0 +1,5 @@
+Доделать единичную матрицу без памяти
+Пройти https://programmingbydoing.com/a/what-if.html
+Книга
+Теория грамматики, конeчный автомат (optional)
+behavior driven development (https://en.wikipedia.org/wiki/Behavior-driven_development)

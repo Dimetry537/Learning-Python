@@ -1,4 +1,4 @@
-from .Item import Item
+from .item import Item
 
 class Weapon(Item):
     def __init__(self, name, damage) -> None:
