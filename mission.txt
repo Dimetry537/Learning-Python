@@ -3,3 +3,5 @@
 Книга
 Теория грамматики, конeчный автомат (optional)
 behavior driven development (https://en.wikipedia.org/wiki/Behavior-driven_development)
+types comments of pull request (https://github.com/rails/rails/pull/19193
+https://github.com/django/django/pull/12505)
