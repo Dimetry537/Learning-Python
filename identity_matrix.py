@@ -1,9 +1,10 @@
 # написать единичную матрицу с использованием циклов for
 #matrix = input('Ensert data of identity matrix')
+#прибавление матриц по индексу две единичные матрицы каждый индекс к каждому индексу другой матрицы
 
 ''' [1 0 0 0 0]
     [0 1 0 0 0]
-    [0 0 1 0 0] 
+    [0 0 1 0 0]
     [0 0 0 1 0]
     [0 0 0 0 1]'''
 '''test_identity_matrix = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
@@ -77,7 +78,7 @@ print(identity_matrix(6))
 # zeroes = 0
 
 # for x in zeroes:
-#     for y in units:      
+#     for y in units:
 #        print(x)
 
 
@@ -104,7 +105,7 @@ zero = 0
 
 # for x in range(n):
 #     # matrix = [zeroes] * n
-#     matrix[x] = unit 
+#     matrix[x] = unit
 #     for y in range(x):
 #        matrix[y] = zero
 #     print(matrix)
