@@ -11,6 +11,7 @@
 у противника всегда есть имя и история
 противник может убежать в соседнюю комнату и сделать засаду.
 Состояния атаки (ожидание, встревожен, сбежал, обезврежен).
+Grim wanderings 2
 '''
 from random import random
 from .dialog import Dialog
@@ -19,8 +20,8 @@ from .sneak import Sneak
 
 class Enemy:
     def __init__(
-        self, name: str, 
-        history: str, 
+        self, name: str,
+        history: str,
         dialog_filename: str,
         fight_filename: str,
         sneak_filename: str,
