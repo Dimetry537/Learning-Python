@@ -5,7 +5,12 @@ class Stack:
     def pop(self):
         if len(self.items) == 0:    
             return
-        return self.items.pop()            
+        return self.items.pop()   
+
+    def top(self):
+        if len(self.items) == 0:    
+            return
+        return self.items[len(self.items -1)]
 
     def push(self, item):
         self.items.append(item)

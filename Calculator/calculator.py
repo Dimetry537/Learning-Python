@@ -1,17 +1,35 @@
+from Calculator.test import OPERATORS
 from Stack.stack import Stack
 
 class Calculator:
     PRIORITIES = {
+        '^': 3,
         '*': 2,
-        '/': 2,
+        '/': 2,        
         "+": 1,
-        "-": 1
+        "-": 1,
     }
+
     def __init__(self, exprasion):
         self.exprasion = exprasion
 
     def reverse_polish_notation(self):
-        pass
+        operands = self.PRIORITIES.keys()
+        OPERATORS = float(self.exprasion) # point
+        stack = Stack()
+        rpn = []
+        
+        for i in equations:
+            if i == OPERATORS:
+                return rpn
+            if i == operands:
+                return stack
+
+        while True:
+            if operands in stack:
+                return stack
+                
+            pass
         ## return 2 2 * 2 +
 
     def calculate(self):
