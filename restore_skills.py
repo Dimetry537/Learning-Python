@@ -208,3 +208,7 @@ print(array_sum)
 for i in range(len(array_lesha)):
     array_sum[i] = array_uvasa[i] + array_lesha[i]
 print(array_sum)
+
+# написать матрицу с ее введением (массив с вложенным массивом [[], [], []])
+
+# написать программу, которая будет угадывать число
