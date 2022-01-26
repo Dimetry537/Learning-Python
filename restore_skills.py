@@ -145,3 +145,66 @@ print(end_time - start_time, "seconds")
 #   def pop
 # почитать обратную польскую нотацию и алгоритм преобразования в нее и вычисления по ней
 # 
+
+
+# print all numbers which devided by 4 with no остатка
+
+# for i in array:
+#     if i % 4 == 0:
+#         print(i)
+
+
+# print sum of all numbers divided by 10
+
+from array import array
+
+
+array_witt_10 = [1, 20, 20, 3, 4, 2, 7, 10, 20, 30]
+
+# for i in array_witt_10:
+#     if i % 10 == 0:
+#         print(i)
+
+# 1232 + 321 + 2351 + 4233
+
+# 0    + 1232 = 1232
+# 1232 + 321 = 1553
+# 1553 + 2351 = 3904
+# 3904 + 4233 = 8137
+
+# k = 0
+
+# for i in array_witt_10:
+#     if i % 10 == 0:
+#         k = k + i
+# print(k)
+
+
+
+array_uvasa = [231,   123,   1231, 1237321]
+array_lesha = [68731, 21312, 314,  12313]
+# 231 + 68731 = array_uvasa[0] + array_lesha[0] = array_sum[0]
+# 123 + 21312 = array_uvasa[1] + array_lesha[1] = array_sum[1]
+# 1231 + 314 = array_uvasa[2] + array_lesha[2] = array_sum[2]
+# 1237321 + 12313 = array_uvasa[3] + array_lesha[3] = array_sum[3]
+
+# [0,0]
+
+# array = []
+# array.append(4)
+# array -> [4]
+# array.append(4)
+# arrya -> [4, 4]
+# array.append(4)
+# array -> [4, 4, 4]
+
+array_sum = []
+
+for i in range(len(array_lesha)):
+    array_sum.append(0)
+
+print(array_sum)
+
+for i in range(len(array_lesha)):
+    array_sum[i] = array_uvasa[i] + array_lesha[i]
+print(array_sum)
