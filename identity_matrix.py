@@ -15,13 +15,13 @@ for x in test_identity_matrix:
 
 print(x)
 '''
-def identity_matrix(n):
-    m=[[0 for x in range(n)] for y in range(n)]
-    for i in range(0, n):
-        m[i][i] = 1
-    return m
+# def identity_matrix(n):
+#     m=[[0 for x in range(n)] for y in range(n)]
+#     for i in range(0, n):
+#         m[i][i] = 1
+#     return m
 
-print(identity_matrix(6))
+# print(identity_matrix(6))
 
 # TODO make this to work on code
 # [1 1 1]    [1 1 2]     [2 2 3]
@@ -98,7 +98,7 @@ print(identity_matrix(6))
 
 zeroes = 0 #' 0 '
 unit = 1
-n = 10
+n = 20
 zero = 0
 
 # matrix = [zeroes] * n
