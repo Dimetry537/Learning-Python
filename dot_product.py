@@ -11,9 +11,9 @@ vector_b = [2,3,4,4,5,5,6,7]
 vector_c = []
 
 for i in range(len(vector_a)):
+    
     vector_c.append(0)
 
-for i in range(len(vector_a)):
     vector_c[i] = vector_a[i] * vector_b[i]
 
 k = 0
