@@ -202,5 +202,3 @@ print(array_sum)
 for i in range(len(array_lesha)):
     array_sum[i] = array_uvasa[i] + array_lesha[i]
 print(array_sum)
-
-# написать программу, которая будет угадывать число
