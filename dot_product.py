@@ -8,16 +8,17 @@ vector_b = [2,3,4,4,5,5,6,7]
 
 # vector_a[1] * vector_b[1] + vector_a [2] * vector_b[2]....
 
-vector_c = []
+# vector_c = []
 
-for i in range(len(vector_a)):
+# for i in range(len(vector_a)):
     
-    vector_c.append(0)
+#     vector_c.append(0)
 
-    vector_c[i] = vector_a[i] * vector_b[i]
+#     vector_c[i] = vector_a[i] * vector_b[i]
 
 k = 0
 
-for i in vector_c:
-    k = k + i
-print(k)
+for i in range(len(vector_a)):
+    k = vector_a[i] * vector_b[i]
+    k[i] = k + i
+    print(k)
