@@ -10,7 +10,7 @@ Weekday 6: Friday
 Weekday 7: Saturday
 Weekday 0: Saturday
 ''')
-weekday = input("Enter weekday number: ")
+weekday = int(input("Enter weekday number: "))
 
 if weekday == 1:
     print('Today is Sunday!')
@@ -24,7 +24,7 @@ elif weekday == 5:
     print('Today is Thursday!')
 elif weekday == 6:
     print('Today is Friday!')
-elif weekday == 7:
+elif weekday == 7 or weekday == 0:
     print('Today is Saturday!')
 else:
     print('Error')
