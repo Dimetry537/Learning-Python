@@ -20,5 +20,5 @@ k = 0
 
 for i in range(len(vector_a)):
     k = vector_a[i] * vector_b[i]
-    k[i] = k + i
-    print(k)
+    b = sum(k[i])
+    print(b)

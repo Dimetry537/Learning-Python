@@ -6,7 +6,9 @@
 
 # [[1, 2, 3], [2, 3, 4], [5, 6, 7]]
 
-matrix = input([])
+t = [[1, 2, 3], [2, 3, 4], [5, 6, 7]]
+for both in t:
+    a, b, c = both
+    print(a, b, c)
 
-for i in range(matrix):
-    print(matrix)
+# for (a, b, c, d) in [(1, 2, 3, 4), (2, 3, 4, 6), (5, 6, 7, 8), (5, 6, 7, 8)]: print(a, b, c, d)
