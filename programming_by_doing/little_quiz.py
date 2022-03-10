@@ -15,8 +15,10 @@ Q1) What is the capital of Alaska?
 '''))
 
 if q1 == 2:
+    q1_answer = 1
     print("That's right!")
 else:
+    q1_answer = 0
     print("This answer is not  correct")
 
 q2 = int(input('''
@@ -26,8 +28,10 @@ Q2) Can you store the value "cat" in a variable of type int?
 '''))
 
 if q2 == 1:
+    q2_answer = 0
     print('''Sorry, "cat" is a string. ints can only store numbers.''')
 else:
+    q2_answer = 1
     print("That's right!")
 
 q3 = int(input('''
@@ -38,13 +42,14 @@ Q3) What is the result of 9+6/3?
 '''))
 
 if q3 == 2:
+    q3_answer = 1
     print("That's correct!")
 else:
+    q3_answer = 0
     print("This answer is not  correct")
 
-# if q1 == 2 and q2 == 2 and q3 == 2:
-#     print("Overall, you got 3 out of 3 correct.")
-# if q1 == 1 and q2 == 2 and q3 == 2:
-#     print("Overall, you got 2 out of 3 correct.")
+q4 = q1_answer + q2_answer + q3_answer
+
+print("Overall, you got " + str(q4) + " out of 3 correct.")
 
 exit('Thanks for playing!')
