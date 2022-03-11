@@ -11,23 +11,23 @@ print('Question 2) Is it bigger than a breadbox?')
 
 answer_breadbox = input('answer is: ')
 
-if answer == 'animal' and answer_breadbox == 'yes':
-	answer_end = 'mouse'
+if answer == 'animal':
+	if answer_breadbox == 'yes':
+		answer_end = 'mouse'
+	else:
+		answer_end = 'squirrel'
 
-if answer == 'animal' and answer_breadbox == 'no':
-	answer_end = 'squirrel'
+if answer == 'vegetable':
+	if answer_breadbox == 'yes':
+		answer_end = 'watermelon'
+	else:
+		answer_end = 'carrot'
 
-if answer == 'vegetable' and answer_breadbox == 'yes':
-	answer_end = 'watermelon'
-
-if answer == 'vegetable' and answer_breadbox == 'no':
-	answer_end = 'carrot'
-
-if answer == 'mineral' and answer_breadbox == 'yes':
-	answer_end = 'paper clip'
-	
-if answer == 'mineral' and answer_breadbox == 'no':
-	answer_end = 'Camaro'
+if answer == 'mineral':
+	if answer_breadbox == 'yes':
+		answer_end = 'paper clip'
+	else:
+		answer_end = 'Camaro'
 	
 print('''
 My guess is that you are thinking of a ''' + answer_end + '''.
