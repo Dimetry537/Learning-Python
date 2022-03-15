@@ -4,6 +4,8 @@ guess = int(input('Guess the number from 0 to 10; you have 5 attempts: '))
 
 number = random.randint(0, 10)
 
+print(number)
+
 counter = 0
 
 while True:
