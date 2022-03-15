@@ -12,10 +12,10 @@ while True:
 	if guess < number:
 		counter +=1
 		guess = int(input('Your number is less than expected (' + str(counter) + '): '))
-	elif guess > number:
+	if guess > number:
 		counter += 1
 		guess = int(input('Your number is higher (' + str(counter) + ') : '))
-	else:
+	if guess == number:
 		exit('you guessed')
 	if counter == 5:
 		exit("you've run out of attempts")
