@@ -15,5 +15,5 @@ while True:
 		guess = int(input('Your number is higher (' + str(counter) + ') : '))
 	else:
 		exit('you guessed')
-	if counter == 5:
+	if counter == 4:
 		exit("you've run out of attempts")
