@@ -7,15 +7,13 @@ number = random.randint(0, 10)
 counter = 0
 
 while True:
-	counter += 1
-	guess = int(input('Try again (' + str(counter) + ') : '))
 	if guess < number:
 		counter +=1
 		guess = int(input('Your number is less than expected (' + str(counter) + '): '))
-	if guess > number:
+	elif guess > number:
 		counter += 1
 		guess = int(input('Your number is higher (' + str(counter) + ') : '))
-	if guess == number:
+	else:
 		exit('you guessed')
 	if counter == 5:
 		exit("you've run out of attempts")
