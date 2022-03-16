@@ -1,6 +1,5 @@
 count = int(input("count to: "))
-for i in range(1, count+1):
-    k = [i]
-    print(k)
+print(*range(1, count+1))
+#for i in range(1, count+1): print(i)
 #numbers = [i for i in range(1, count+1)]
 #print(numbers)
