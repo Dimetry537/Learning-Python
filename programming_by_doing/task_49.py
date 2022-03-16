@@ -1,8 +1,8 @@
 import random
 
-guess = int(input('Guess the number from 0 to 10; you have 5 attempts: '))
+guess = int(input('Guess the number from 0 to 10; you have 7 attempts: '))
 
-number = random.randint(0, 10)
+number = random.randint(0, 100)
 
 counter = 0
 
@@ -15,5 +15,5 @@ while True:
         guess = int(input('Your number is higher (' + str(counter) + ') : '))
     else:
         exit('you guessed')
-    if counter == 4:
+    if counter == 6:
         exit("you've run out of attempts")
