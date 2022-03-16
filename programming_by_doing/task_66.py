@@ -1,5 +1,4 @@
 count = int(input("count to: "))
 
-for i in range(count):
-    count += 1
-    print(count)
+for i in range(0, count):
+    print(i)
