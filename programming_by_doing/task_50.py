@@ -1,10 +1,10 @@
 import random
 print('HERE COMES THE DICE!')
 
-roll_1 = 0
-roll_2 = 0
+roll_1 = float("nan")
+roll_2 = float("nan")
 
-while True:
+while roll_1 != roll_2:
     roll_1 = random.randrange(1, 6)
     roll_2 = random.randrange(1, 6)
     roll_total = roll_1 + roll_2
