@@ -4,6 +4,10 @@ ______________
 ''')
 
 x = float(-10)
-
-for i in range(x, 10, 0.5):
-    print(float(i))
+print(x)
+#for i in range(x, 10, 0.5):
+while True:
+    x += 0.5
+    print(x)
+    if x == 10:
+        break
