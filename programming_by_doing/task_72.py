@@ -2,15 +2,13 @@ message = input("What is your message? ")
 
 print("Your message is " + str(len(message)) + " characters long.")
 
-list = [message]
+first_letter = message[0]
 
-a = list.index(0)
+last_letter = message[-1]
 
-print(a)
+print("The first character is at position 0 and is " + str(first_letter))
 
-print("The first character is at position 0 and is 'A'.")
-
-print("The last character is at position 30 and is '!'.")
+print("The last character is at position " + str(len(message)) + " and is " + str(last_letter))
 
 print("Here are all the characters, one at a time: ")
 
