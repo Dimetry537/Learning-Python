@@ -26,7 +26,7 @@ while x < 5:
     if x > 0:
         j = x
         while j > 0:
-            y = j**2
+            y = j*  *2
             print(y, end="\t")
             j -= 1
     else:
