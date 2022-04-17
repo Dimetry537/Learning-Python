@@ -1,10 +1,11 @@
 import random
 
 def score(dice):
-    score =[]
-    while len(score) < 6:
-        dice = random.randint(1, 6)
-        for dice in score:
+    dice = []
+    for dice in range(5):
+        roll = random.randint(1, 6)
+        for roll in dice:
+            dice.append(roll)
             print(dice)
-            
-score(1)
+
+score(dice=5)
