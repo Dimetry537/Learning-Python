@@ -9,4 +9,6 @@ def score(dice):
         dice.append(i)
     print(dice)
     
-score(dice=1)
+score([])
+
+
