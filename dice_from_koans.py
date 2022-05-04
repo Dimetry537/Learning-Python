@@ -8,40 +8,44 @@
 #    print(dice)
 #    return dice
 
-score_not_random = [5, 5, 1, 1, 1]
+score_not_random = [4, 4, 4]
 
-counter = 0
+counter_1 = 0
+counter_2 = 0
+counter_3 = 0
 triplet = 0
 
 for units in score_not_random:
     triplet += 1
     if units == 1 and  triplet < 3:
-        counter += 100
+        counter_1 += 100
     
     elif units == 1 and triplet == 3:
-        counter += 1000
+        counter_1 += 1000
     
 for fives in score_not_random:
     triplet += 1
     if fives == 5 and triplet < 3:
-        counter += 50
+        counter_2 += 50
          
     elif fives == 5 and triplet == 3:
-        counter += 500
+        counter_2 += 500
 
 for others in score_not_random:
     triplet += 1
-    if others == 2 and triplet > 3:
-        counter = 2 * 100
+    if others == 2 and triplet == 3:
+        counter_3 = 2 * 100
         
-    if others == 3 and triplet > 3:
-        counter = 3 * 100
+    if others == 3 and triplet == 3:
+        counter_3 = 3 * 100
         
-    if others == 4 and triplet > 3:
-        counter = 4 * 100
+    if others == 4 and triplet == 3:
+        counter_3 = 4 * 100
     
-    if others == 6 and triplet > 3:
-        counter = 6 * 100
+    if others == 6 and triplet == 3:
+        counter_3 = 6 * 100
+        
+counter = counter_1 + counter_2 + counter_3
 print(counter)
         
 #    elif numbers == 5 and triplet < 3:
