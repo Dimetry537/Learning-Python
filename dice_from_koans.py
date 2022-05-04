@@ -8,7 +8,7 @@
 #    print(dice)
 #    return dice
 
-score_not_random = [5, 5, 5, 2, 2]
+score_not_random = [5, 5, 1, 1, 1]
 
 counter = 0
 triplet = 0
