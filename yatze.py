@@ -1,17 +1,17 @@
-#import random
-#dice = []
-#for i in range(5):
-#        i = random.randint(1, 6)
-#        dice.append(i)
+import random
+dice = []
+for i in range(5):
+        i = random.randint(1, 6)
+        dice.append(i)
 
-#print(dice)
+print(dice)
 
-#dict_dise = {1 : 0, 2 : 0, 3 : 0, 4 : 0, 5 : 0, 6 : 0}
+dict_dise = {1 : 0, 2 : 0, 3 : 0, 4 : 0, 5 : 0, 6 : 0}
 
-#for ordered_dict in dice:
-#    dict_dise[ordered_dict] += 1
+for ordered_dict in dice:
+    dict_dise[ordered_dict] += 1
 
-dict_dise = {1: 0, 2: 1, 3: 2, 4: 0, 5: 0, 6: 0}
+#dict_dise = {1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 0}
 
 k = list(dict_dise.values())
     
@@ -21,13 +21,14 @@ print(dict_dise)
 
 print("\n")
 
+counter_1 = 0
 counter = 0
 couples = 0
 troika = 0
 
 for i in dict_dise.values():
     if i == 1:
-        counter += 1
+        counter_1 += 1
     elif i == 2:
         counter += 1
         if counter == 1:
@@ -41,7 +42,6 @@ for i in dict_dise.values():
     elif i == 5:
         exit("Yatze")
         
-print(couples)
 
 if couples == 1 and troika == 1:
     exit("Full House")
@@ -52,5 +52,5 @@ elif couples == 1:
 elif troika == 1:
     print("troika")
     
-if counter == 5 and k[0] == 0 or counter == 5 and k[-1] == 0:
+if counter_1 == 5 and k[0] == 0 or counter_1 == 5 and k[-1] == 0:
     print("Street")
