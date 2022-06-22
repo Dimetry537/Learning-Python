@@ -4,11 +4,11 @@ class  Snake:
         self.x = x
         self.y = y
         self.fragments = [[20, 20], [20, 21], [20, 22], [20, 23]]
-        self.fragment = [[x, y]]
+        self.head = self.fragments[0]
         self.moves = None
         self.speed = 1
         
     def add(self):
-        fragment += 1
+        head += 1
         pass
     
