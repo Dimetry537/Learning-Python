@@ -25,3 +25,7 @@ second_matrix = [[0, 0], [0, 0]]
 first_matrix = [[-5, - 2], [4, 6]]
 
 second_matrix = [[7, 8], [-8, -12]]
+
+first_matrix = [[-5, - 2, 1], [4, 6, 10], [16, 24, 36]]
+
+second_matrix = [[7, 8], [-8, -12]]
