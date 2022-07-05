@@ -15,6 +15,5 @@ def matrix_multiplication():
                 result_matrix[i][j] += first_matrix[i][k] * second_matrix[k][j]
         
     print(result_matrix)
-    return result_matrix
     
 matrix_multiplication()
