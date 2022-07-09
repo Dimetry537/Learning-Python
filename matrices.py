@@ -14,18 +14,3 @@
 #    
 #print(first_matrix)
 
-first_matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-
-second_matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-
-first_matrix = [[0, 0], [0, 0]]
-
-second_matrix = [[0, 0], [0, 0]]
-
-first_matrix = [[-5, - 2], [4, 6]]
-
-second_matrix = [[7, 8], [-8, -12]]
-
-first_matrix = [[-5, - 2, 1], [4, 6, 10], [16, 24, 36]]
-
-second_matrix = [[7, 8], [-8, -12]]
