@@ -1,7 +1,3 @@
-class Player:
-    def  __init__(self) -> None:
-        self.directions = input("directions")
-
 class  Snake:
     
     def  __init__(self, player) -> None:
