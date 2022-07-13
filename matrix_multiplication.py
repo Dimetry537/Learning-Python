@@ -42,7 +42,6 @@ def test_full_different_size():
     first_matrix = [[-5, -2, 1], [4, 6, 10]]
     second_matrix = [[7, 8], [-8, -12], [1, 2]]
     result = matrix_multiplication(first_matrix, second_matrix)
-    print(result)
     assert result ==  [[-18, -14], [-10, -20]], "Matrix multiplication doesn't work"
 
 def test_fail():

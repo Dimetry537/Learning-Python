@@ -1,12 +1,12 @@
+class Player:
+    def  __init__(self) -> None:
+        self.directions = input("directions")
+
 class  Snake:
     
-    def __init__(self):
+    def  __init__(self, player) -> None:
         self.fragments = [[20, 20], [20, 21], [20, 22], [20, 23]]
         self.head = self.fragments[0]
-        self.moves = None
-        self.speed = 1
+        self.speed = 20
+        self.player = player
         
-    def add(self):
-        head += 1
-        pass
-    
