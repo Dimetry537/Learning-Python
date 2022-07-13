@@ -7,10 +7,10 @@
 # расчет урона по сравнению с объектом, от корого получен урон.
 # во время боя использовать метод броска кубика
 # сделать отдельно систему боя.
-from .Inventory import Inventory
-from .Item import Item
-from .Armor import Armor
-from .Weapon import Weapon
+from .inventory import Inventory
+from .item import Item
+from .armor import Armor
+from .weapon import Weapon
 from .game_over_error import GameOverError
 
 class Player:

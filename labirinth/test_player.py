@@ -1,6 +1,6 @@
-from game.Weapon import Weapon
-from game.Player import Player, GameOverError
-from game.Armor import Armor
+from game.weapon import Weapon
+from game.player import Player, GameOverError
+from game.armor import Armor
 from game.game_over_error import GameOverError
 
 player = Player()

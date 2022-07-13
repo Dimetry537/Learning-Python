@@ -1,5 +1,5 @@
-from game.Inventory import Inventory
-from game.Item import Item
+from game.inventory import Inventory
+from game.item import Item
 
 inventory = Inventory()
 

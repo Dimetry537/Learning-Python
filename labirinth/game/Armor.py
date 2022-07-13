@@ -1,4 +1,4 @@
-from .Item import Item
+from .item import Item
 
 class Armor(Item):
     def __init__(self, name, protection) -> None:
