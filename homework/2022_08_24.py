@@ -21,14 +21,14 @@ class Room():
         return False
         
     def __str__(self):
-        return str(self.volume) + "    " + str(self.volume_1) + "   " + str(Room.__eq__)
+        return str(self.volume) + "    " + str(self.volume_1)
         
 p = Room(2, 2, 3, 2, 2, 3)
 
-print(p.volume, p.volume_1)
-print(p.volume == p.volume_1)
+print(f"Объем первой клмнаты: {p.volume}, Объем второй комнаты: {p.volume_1}")
+print(f"Комнаты равны: {p.volume == p.volume_1}")
 
-p = Room(2, 2, 3, 1, 2, 3)
+p = Room(2, 2, 3, 4, 2, 3)
 
-print(p.volume, p.volume_1)
-print(p.volume == p.volume_1)
+print(f"Объем первой клмнаты: {p.volume}, Объем второй комнаты: {p.volume_1}")
+print(f"Комнаты равны: {p.volume == p.volume_1}")
