@@ -14,5 +14,9 @@ class Room():
     def volume(self):
         return self._volume
         
-Room(1, 2, 3)
-Room.volume()
+p = Room(1, 2, 3)
+
+p.volume()
+
+print(p)
+print(p.volume)
