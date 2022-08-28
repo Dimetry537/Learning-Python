@@ -5,18 +5,24 @@
 # 3* Задача: добавить метод сравнение  комнат между собой по площади (равно не равно - def __eq__ подсказка)
 
 class Room():
-    def __init__(self, width: int, length: int, height: int) -> None:
+    def __init__(self, width: int, length: int, height: int, width_1: int, length_1: int, height_1: int) -> None:
         self.width = width
+        self.width_1 = width_1
         self.length = length
+        self.length_1 = length_1
         self.height = height
-        self._volume = width * length * height
-        
-    def volume(self):
-        return self._volume
-        
-p = Room(1, 2, 3)
+        self.height_1 = height_1
+        self.volume = width * length * height
+        self.volume_1 = width_1 * length_1 * height_1
 
-p.volume()
+    def __eq__(self, o):
+        if self.volume > self.volume_1:
+            return True
+        return False
+        
+    def __str__(self):
+        return str(self.volume) + "    " + str(self.volume_1) + "   " + str(Room.__eq__)
+        
+p = Room(2, 2, 3, 1, 2, 3)
 
-print(p)
-print(p.volume)
+print(p.volume, p.volume_1, p.__str__)
