@@ -27,3 +27,8 @@ p = Room(2, 2, 3, 2, 2, 3)
 
 print(p.volume, p.volume_1)
 print(p.volume == p.volume_1)
+
+p = Room(2, 2, 3, 1, 2, 3)
+
+print(p.volume, p.volume_1)
+print(p.volume == p.volume_1)
