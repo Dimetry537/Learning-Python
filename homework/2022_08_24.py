@@ -25,10 +25,10 @@ class Room():
         
 p = Room(2, 2, 3, 2, 2, 3)
 
-print(f"Объем первой клмнаты: {p.volume}, Объем второй комнаты: {p.volume_1}")
+print(f"Объем первой комнаты: {p.volume}, Объем второй комнаты: {p.volume_1}")
 print(f"Комнаты равны: {p.volume == p.volume_1}")
 
-p = Room(2, 2, 3, 4, 2, 3)
+p = Room(2, 2, 2, 4, 4, 4)
 
-print(f"Объем первой клмнаты: {p.volume}, Объем второй комнаты: {p.volume_1}")
+print(f"Объем первой комнаты: {p.volume}, Объем второй комнаты: {p.volume_1}")
 print(f"Комнаты равны: {p.volume == p.volume_1}")
