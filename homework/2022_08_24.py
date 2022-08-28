@@ -16,13 +16,14 @@ class Room():
         self.volume_1 = width_1 * length_1 * height_1
 
     def __eq__(self, o):
-        if self.volume > self.volume_1:
+        if self.volume == self.volume_1:
             return True
         return False
         
     def __str__(self):
         return str(self.volume) + "    " + str(self.volume_1) + "   " + str(Room.__eq__)
         
-p = Room(2, 2, 3, 1, 2, 3)
+p = Room(2, 2, 3, 2, 2, 3)
 
-print(p.volume, p.volume_1, p.__str__)
+print(p.volume, p.volume_1)
+print(p.volume == p.volume_1)
