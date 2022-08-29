@@ -22,9 +22,9 @@ class Room():
 first_room = Room(4, 4, 4)
 second_room = Room(5, 5, 5)
 
-print(f"Объем первой комнаты: {first_room}; Объем второй комнаты: {second_room}. Комнаты равны: {first_room==second_room}")
+print(f"Объем первой комнаты: {first_room} \nОбъем второй комнаты: {second_room} \nКомнаты равны: {first_room==second_room}")
 
 first_room = Room(4, 4, 4)
 second_room = Room(4, 4, 4)
 
-print(f"Объем первой комнаты: {first_room}; Объем второй комнаты: {second_room}. Комнаты равны: {first_room==second_room}")
+print(f"Объем первой комнаты: {first_room} \nОбъем второй комнаты: {second_room} \nКомнаты равны: {first_room==second_room}")
