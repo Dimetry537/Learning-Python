@@ -12,12 +12,19 @@ class Room():
         self.volume = width * length * height
 
     def __eq__(self, o):
-        pass
+        if isinstance(o, Room):
+            return self.volume == o.volume
+        return False
         
     def __str__(self):
         return str(self.volume)
         
-p = Room(2, 2, 3)
+first_room = Room(4, 4, 4)
+second_room = Room(5, 5, 5)
 
-print(f"Объем комнаты: {p.volume}")
+print(f"Объем первой комнаты: {first_room}; Объем второй комнаты: {second_room}. Комнаты равны: {first_room==second_room}")
 
+first_room = Room(4, 4, 4)
+second_room = Room(4, 4, 4)
+
+print(f"Объем первой комнаты: {first_room}; Объем второй комнаты: {second_room}. Комнаты равны: {first_room==second_room}")
