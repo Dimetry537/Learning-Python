@@ -23,7 +23,13 @@ class Prisma():
              a = self.a_facet ** 2
              square = (self.parallelepiped_score * a) / 4 * tan
              self.volume = square * self.b_facet
+    
+    def __str__(self):
+        return str(self.volume)
+             
              
 prisma = Prisma(5, 3, 3, 90, 90)
+volume = Prisma.volume
 
 print(f"{prisma}")
+print(f"{volume}")
