@@ -11,7 +11,7 @@ class Prisma():
         self.ab_angle = ab_angle
         self.ba_angle = ba_angle
         if ab_angle + ba_angle != 180:
-            exit("your parameter is wrong")
+            exit("the angle must be at least 180 degrees")
             
     def volume(self):
         if self.parallelepiped_score == 3:
@@ -24,6 +24,6 @@ class Prisma():
              square = (self.parallelepiped_score * a) / 4 * tan
              self.volume = square * self.b_facet
              
-prisma = Prisma(2, 3, 3, 90, 90)
+prisma = Prisma(5, 3, 3, 90, 90)
 
-print(f)
+print(f"{prisma}")
