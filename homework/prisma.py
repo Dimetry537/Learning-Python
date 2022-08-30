@@ -25,11 +25,11 @@ class Prisma():
              self.volume = square * self.b_facet
     
     def __str__(self):
-        return str(self.volume)
+        return str(self.volume())
              
              
 prisma = Prisma(5, 3, 3, 90, 90)
-volume = Prisma.volume
+volume = prisma.volume()
 
 print(f"{prisma}")
 print(f"{volume}")
