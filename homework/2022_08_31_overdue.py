@@ -9,4 +9,20 @@
 # * Написать класс медика, и при взятии талона назначать медика на талон (через какой-то индентификатор - отдельное поле в классе)
 
 class Ticket():
-    
+    def __init__(self, columns) -> None:
+        self.columns = columns
+        lines = 5
+        ticket_1 = [[] * columns for i in range(lines)]
+        ticket_1[0].append('Ф.И.О.')
+        ticket_1[1].append("Дата рождения")
+        ticket_1[2].append("Возраст")
+        ticket_1[3].append("Дата консультации")
+        ticket_1[4].append("Диагноз")
+        
+        
+    def __repr__(self) -> str:
+        return f"{ticket}"
+        
+ticket = Ticket(1)
+
+print(ticket)
