@@ -11,16 +11,24 @@
 from typing import List
 
 
-class Ticket():
-    def __init__(self, full_name, birthday, age, date, diagnosis) -> List:
+class Ticket:
+    def __init__(self, full_name, birthday, age, date, diagnosis, date_except) -> List:
         self.full_name = full_name
         self.birthday = birthday
         self.age = age
         self.date = date
         self.diagnosis = diagnosis
+        self.date_except = date_except
         
     def __repr__(self) -> List:
-        return f"{self.full_name}, {self.birthday}, {self.age}, {self.date}, {self.diagnosis}"
+        return f"{self.full_name} | {self.birthday} | {self.age} | {self.date} | {self.diagnosis} | {self.date_except}"
+        
+class Doctor:
+        def __init__(self, doctor_name):
+            self.doctor_name = doctor_name
+            
+        def __repr__(self) -> List:
+            return f" | {self.doctor_name}"
         
 ticket = Ticket()
 
