@@ -10,25 +10,25 @@
 
 from typing import List
 
+class Doctor:
+        def __init__(self, doctor_name: str, date_except):
+            self.doctor_name = doctor_name
+            self.date_except = date_except
+            
+        def __repr__(self) -> List:
+            return f" | {self.doctor_name} | {self.date_except}"
 
 class Ticket:
-    def __init__(self, full_name, birthday, age, date, diagnosis, date_except) -> List:
+    def __init__(self, full_name: str, birthday, age: int, date, diagnosis: str, doctor: Doctor) -> List:
         self.full_name = full_name
         self.birthday = birthday
         self.age = age
         self.date = date
         self.diagnosis = diagnosis
-        self.date_except = date_except
+        self.doctor = doctor
         
     def __repr__(self) -> List:
-        return f"{self.full_name} | {self.birthday} | {self.age} | {self.date} | {self.diagnosis} | {self.date_except}"
-        
-class Doctor:
-        def __init__(self, doctor_name):
-            self.doctor_name = doctor_name
-            
-        def __repr__(self) -> List:
-            return f" | {self.doctor_name}"
+        return f"{self.full_name} | {self.birthday} | {self.age} | {self.date} | {self.diagnosis} | {self.doctor}"
         
 ticket = Ticket()
 
