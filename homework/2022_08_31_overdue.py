@@ -16,7 +16,7 @@ class Doctor:
             self.date_except = date_except
             
         def __repr__(self) -> List:
-            return f" | {self.doctor_name} | {self.date_except}"
+            return f" | {self.doctor_name} | {self.date_except} |"
 
 class Ticket:
     def __init__(self, full_name: str, birthday, age: int, date, diagnosis: str, doctor: Doctor) -> List:
@@ -31,6 +31,7 @@ class Ticket:
         return f"{self.full_name} | {self.birthday} | {self.age} | {self.date} | {self.diagnosis} | {self.doctor}"
         
 ticket = Ticket()
-
+# Tiket safe to file - Отдельный метод сохранения в фаил - отдельный метод загрузки из фаила
+# имя фаила id, передаешь в конструктор только id - читает фаил с таким названием
 
 print(ticket)
