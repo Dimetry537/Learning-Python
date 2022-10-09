@@ -32,6 +32,10 @@ class Ticket:
     def ticket_in_work_by(self, doctor: Doctor) -> None:
         self.doctor = doctor
         self.date_except = date.today()
+
+    def tticket_save_to_file(self) -> None:
+        with open("id.txt", 'a+') as f:
+            
         
     def __repr__(self) -> List:
         return f"{self.full_name} | {self.birthday} | {self.age} | {self.date} | {self.diagnosis} | {self.doctor} | {self.date_except}"
