@@ -1,8 +1,8 @@
 class File():
 
-    def __init__(self, filename, mode):
+    def __init__(self, filename):
         self.filename = filename
-        self.mode = mode
+        self.mode = 'a+'
 
     def __enter__(self):
         self.open_file = open(self.filename, self.mode)
@@ -13,6 +13,6 @@ class File():
 
 files = []
 for _ in range(10000):
-    with File('foo.txt', 'a+') as infile:
+    with File('foo.txt') as infile:
         infile.write('foo')
         files.append(infile)

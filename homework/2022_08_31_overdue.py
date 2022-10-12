@@ -42,11 +42,11 @@ class Ticket:
     def __repr__(self) -> List:
         return f"{self.full_name} | {self.birthday} | {self.age} | {self.date} | {self.diagnosis} | {self.doctor} | {self.date_except}"
 
-class File():
+class File:
 
-    def __init__(self, filename, mode):
+    def __init__(self, filename):
         self.filename = filename
-        self.mode = mode
+        self.mode = 'a+'
 
     def __enter__(self):
         self.open_file = open(self.filename, self.mode)
