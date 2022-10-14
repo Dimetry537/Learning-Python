@@ -10,11 +10,11 @@ ambulance_employee = Ambulance_employee('Сергеев А.В.', 'фельдше
 
 ticket = Ticket('Иванов И.И.', '01.01.1977', 'Пневмония', 'Поликлиника №1')
 
-doctor_write_to_file = doctor.write_to_file
+doctor.write_to_file(f'{os.path.dirname(os.path.realpath(__file__))}/doctor.txt')
 
-ambulance_employee_write_to_file = ambulance_employee.write_to_file
+ambulance_employee.write_to_file(f'{os.path.dirname(os.path.realpath(__file__))}/ambulance_employee.txt')
 
-ticket_write_to_file = ticket.write_to_file
+ticket.write_to_file(f'{os.path.dirname(os.path.realpath(__file__))}/ticket.txt')
 
 filename_doctor = f'{os.path.dirname(os.path.realpath(__file__))}/doctor.txt'
 
@@ -26,4 +26,4 @@ doctor_restored = Doctor.read_from_file(filename_doctor)
 
 ambulance_employee_restored = Ambulance_employee.read_from_file(filename_ambulance_employee)
 
-ticket_restored = Ticket.read_from_file(filename, doctor_restored)
+ticket_restored = Ticket.read_from_file(filename,doctor_restored, ambulance_employee)
