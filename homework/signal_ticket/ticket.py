@@ -38,7 +38,7 @@ class Ticket:
             date_of_the_ticket = lines[3]
             diagnosis = lines[4]
             referral_clinic = lines[5]
-            date_except = lines[7]
+            date_except = lines[6]
             instance = cls(full_name, birthday, diagnosis, referral_clinic, age, date_of_the_ticket, ambulance_employee, doctor, date_except)
         return instance
 
