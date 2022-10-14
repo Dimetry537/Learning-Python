@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "signal-ticket"
 version = "0.1.0"
-description = "Dimetry537"
+description = "signal ticket for medical organisators"
 authors = ["Maksakov M.D."]
 license = "MIT"
 readme = "README.md"
