@@ -10,15 +10,15 @@ ambulance_employee = Ambulance_employee('Сергеев А.В.', 'фельдше
 
 ticket = Ticket('Иванов И.И.', '01.01.1977', 'Пневмония', 'Поликлиника №1')
 
+ticket.ambulance_in_work_by(ambulance_employee)
+
+ticket.ticket_in_work_by(doctor)
+
 doctor.write_to_file(f'{os.path.dirname(os.path.realpath(__file__))}/doctor.txt')
 
 ambulance_employee.write_to_file(f'{os.path.dirname(os.path.realpath(__file__))}/ambulance_employee.txt')
 
 ticket.write_to_file(f'{os.path.dirname(os.path.realpath(__file__))}/ticket.txt')
-
-ticket.ambulance_in_work_by(ambulance_employee)
-
-ticket.ticket_in_work_by(doctor)
 
 filename_doctor = f'{os.path.dirname(os.path.realpath(__file__))}/doctor.txt'
 
