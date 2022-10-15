@@ -10,7 +10,7 @@ ambulance_employee = Ambulance_employee('Сергеев А.В.', 'фельдше
 
 ticket = Ticket('Иванов И.И.', '01.01.1977', 'Пневмония', 'Поликлиника №1')
 
-ticket_name = f"{ticket.full_name} {ticket.birthday}.txt"
+ticket_name = f"{ticket.date} {ticket.full_name} {ticket.age} лет.txt"
 
 ticket.ambulance_in_work_by(ambulance_employee)
 
