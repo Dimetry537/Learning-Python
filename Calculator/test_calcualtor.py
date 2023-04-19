@@ -1,5 +1,7 @@
 from calculator import Calculator
 
+#make pytest
+
 exprasion = [2, '+', 2, "*", 2]
 calc = Calculator(exprasion)
 
