@@ -43,16 +43,11 @@ class ExpressionEvaluator:
                     stack.append(num1 ** num2)
         return stack[0]
     
-    def evaluate_expression(self, expression):
-        postfix_expression = self._infix_to_postfix(expression)
-        result = self._calculate(postfix_expression)
-        return result
-    
     def compile_calculate(self, expression):
         postfix_expression = self._infix_to_postfix(expression)
         result = self._calculate(postfix_expression)
         return result
     
-    def evaluate_expression(self, expression):
-        result = self.compile_calculate(expression)
-        return result
+    def postfix_expression(self, expression):
+        infix_expression = self._infix_to_postfix(expression)
+        return infix_expression
