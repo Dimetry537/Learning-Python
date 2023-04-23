@@ -19,8 +19,17 @@ def test_substraction():
 def test_degree():
     assert calculator.compile_calculate("2 ^ 4") == 16
 
-def test_complex_expression():
+def test_multiplication_after_addition():
     assert calculator.compile_calculate("2 + 2 * 2") == 6
+
+def test_bracket():
     assert calculator.compile_calculate("( 5 + 10 * ( 2 + 4 ) )") == 65
+
+def test_degree_in_bracket():
     assert calculator.compile_calculate("( 2 + 2 ^ 4 ) + 16 / 4") == 22
+
+def test_degree_after_multiplication():
     assert calculator.compile_calculate("2 * 2 ^ 4") == 32
+
+def test_division_multiplication():
+    assert calculator.compile_calculate("2 * 2 / 4") == 1
