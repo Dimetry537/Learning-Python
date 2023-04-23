@@ -3,7 +3,7 @@ class ExpressionEvaluator:
     def __init__(self):
         self.precedence = {'+': 1, '-': 1, '*': 2, '/': 2, '^': 3}
     
-    def infix_to_postfix(self, expression):
+    def _infix_to_postfix(self, expression):
         operator_stack = []
         output = []
         for token in expression.split():
@@ -23,7 +23,7 @@ class ExpressionEvaluator:
             output.append(operator_stack.pop())
         return ' '.join(output)
     
-    def calculate(self, expression):
+    def _calculate(self, expression):
         stack = []
         for token in expression.split():
             if token.isdigit():
@@ -44,6 +44,15 @@ class ExpressionEvaluator:
         return stack[0]
     
     def evaluate_expression(self, expression):
-        postfix_expression = self.infix_to_postfix(expression)
-        result = self.calculate(postfix_expression)
+        postfix_expression = self._infix_to_postfix(expression)
+        result = self._calculate(postfix_expression)
+        return result
+    
+    def compile_calculate(self, expression):
+        postfix_expression = self._infix_to_postfix(expression)
+        result = self._calculate(postfix_expression)
+        return result
+    
+    def evaluate_expression(self, expression):
+        result = self.compile_calculate(expression)
         return result

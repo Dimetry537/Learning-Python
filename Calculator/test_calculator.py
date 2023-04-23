@@ -4,10 +4,12 @@ from polish_notation import ExpressionEvaluator
 
 def test_calculate():
     calculator = ExpressionEvaluator()
-    assert calculator.calculate("5 10 2 * 5 / 10 15 + * +") == 105
-    assert calculator.calculate("2 4 ^") == 16
-    assert calculator.calculate("5 2 4 ^ + 10 5 * 4 / +") == 33.5
-    assert calculator.calculate("4 4 10 + + 11 4 * +") == 62
-
-if __name__ == "__main__":
-    pytest.main()
+    assert calculator.compile_calculate("2 + 2") == 4
+    assert calculator.compile_calculate("2 * 2") == 4
+    assert calculator.compile_calculate("2 / 2") == 1
+    assert calculator.compile_calculate("2 - 2") == 0
+    assert calculator.compile_calculate("2 ^ 4") == 16
+    assert calculator.compile_calculate("2 + 2 * 2") == 6
+    assert calculator.compile_calculate("( 5 + 10 * ( 2 + 4 ) )") == 65
+    assert calculator.compile_calculate("( 2 + 2 ^ 4 ) + 16 / 4") == 22
+    assert calculator.compile_calculate("2 * 2 ^ 4") == 32
