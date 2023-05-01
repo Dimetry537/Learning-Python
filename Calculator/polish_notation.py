@@ -68,5 +68,6 @@ class ExpressionEvaluator:
     
     def postfix_expression(self, expression):
         spaces_expression = self._add_spaces(expression)
+        print(spaces_expression)
         infix_expression = self._infix_to_postfix(spaces_expression)
         return infix_expression

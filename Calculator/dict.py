@@ -44,6 +44,7 @@ class ExpressionEvaluator:
 
     def postfix_notation(self, expression):
         spaces_expression = self._add_spaces(expression)
+        print(spaces_expression)
         postfix_expression = self._infix_to_postfix(spaces_expression)
         return postfix_expression
 
