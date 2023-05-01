@@ -6,3 +6,4 @@ postfix_expression = evaluator.postfix_expression(infix_expression)
 print("Postfix expression:", postfix_expression)
 result = evaluator.compile_calculate(postfix_expression)
 print("Result:", result)
+

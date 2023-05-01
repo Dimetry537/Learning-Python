@@ -19,7 +19,9 @@ class ExpressionEvaluator:
                 result += expression[i] + " "
                 i += 1
         return result
-    
+
+
+
     def _infix_to_postfix(self, expression):
         operator_stack = []
         output = []
@@ -38,35 +40,16 @@ class ExpressionEvaluator:
                 operator_stack.append(token)
         while operator_stack:
             output.append(operator_stack.pop())
-        return ' '.join(output)
-    
-    def _calculate(self, expression):
-        stack = []
-        for token in expression.split():
-            if token.isdigit():
-                stack.append(int(token))
-            else:
-                num2 = stack.pop()
-                num1 = stack.pop()
-                if token == '+':
-                    stack.append(num1 + num2)
-                elif token == '-':
-                    stack.append(num1 - num2)
-                elif token == '*':
-                    stack.append(num1 * num2)
-                elif token == '/':
-                    stack.append(num1 / num2)
-                elif token == '^':
-                    stack.append(num1 ** num2)
-        return stack[0]
-    
-    def compile_calculate(self, expression):
+        return ''.join([f'{i} ' for i in output]).strip()
+
+    def postfix_notation(self, expression):
         spaces_expression = self._add_spaces(expression)
         postfix_expression = self._infix_to_postfix(spaces_expression)
-        result = self._calculate(postfix_expression)
-        return result
+        return postfix_expression
+
     
-    def postfix_expression(self, expression):
-        spaces_expression = self._add_spaces(expression)
-        infix_expression = self._infix_to_postfix(spaces_expression)
-        return infix_expression
+evaluator = ExpressionEvaluator()
+infix_expression = "2+10*12"
+print(infix_expression)
+postfix_expression = evaluator.postfix_notation(infix_expression)
+print(postfix_expression)

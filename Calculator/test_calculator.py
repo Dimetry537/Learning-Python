@@ -23,7 +23,10 @@ def test_multiplication_after_addition():
     assert calculator.compile_calculate("2 + 2 * 2") == 6
 
 def test_bracket():
-    assert calculator.compile_calculate("( 5 + 10 * ( 2 + 4 ) )") == 65
+    assert calculator.compile_calculate("( 5 + 10 ) * ( 2 + 4 )") == 90
+
+def test_duo_bracket():
+    assert calculator.compile_calculate("( ( 5 + 10 ) * 2 ) * 5") == 150
 
 def test_degree_in_bracket():
     assert calculator.compile_calculate("( 2 + 2 ^ 4 ) + 16 / 4") == 22
@@ -33,3 +36,9 @@ def test_degree_after_multiplication():
 
 def test_division_multiplication():
     assert calculator.compile_calculate("2 * 2 / 4") == 1
+
+def test_without_space():
+    assert calculator.compile_calculate("3+3") == 6
+
+def test_with_two_spaces():
+    assert calculator.compile_calculate("3  +  3") == 6
