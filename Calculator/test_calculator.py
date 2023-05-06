@@ -42,3 +42,9 @@ def test_without_space():
 
 def test_with_two_spaces():
     assert calculator.compile_calculate("3  +  3") == 6
+
+def test_error_input():
+    assert calculator.compile_calculate("2+2)*2") == None
+
+def test_error_numbers():
+    assert calculator.compile_calculate("2*2+") == None

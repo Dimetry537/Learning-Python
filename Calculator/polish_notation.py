@@ -61,13 +61,19 @@ class ExpressionEvaluator:
         return stack[0]
     
     def compile_calculate(self, expression):
-        spaces_expression = self._add_spaces(expression)
-        postfix_expression = self._infix_to_postfix(spaces_expression)
-        result = self._calculate(postfix_expression)
-        return result
+        try:
+            spaces_expression = self._add_spaces(expression)
+            postfix_expression = self._infix_to_postfix(spaces_expression)
+            result = self._calculate(postfix_expression)
+            return result
+        except Exception as error:
+            print("Ошибка ввода: ", error)
     
     def postfix_expression(self, expression):
-        spaces_expression = self._add_spaces(expression)
-        print(spaces_expression)
-        infix_expression = self._infix_to_postfix(spaces_expression)
-        return infix_expression
+        try:
+            spaces_expression = self._add_spaces(expression)
+            print(spaces_expression)
+            infix_expression = self._infix_to_postfix(spaces_expression)
+            return infix_expression
+        except Exception as error:
+            print("Ошибка ввода: ", error)
