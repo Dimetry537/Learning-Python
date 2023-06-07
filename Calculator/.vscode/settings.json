@@ -1,7 +1,6 @@
 {
-    "git.ignoreLimitWarning": true,
     "python.testing.pytestArgs": [
-        "Calculator"
+        "."
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true
